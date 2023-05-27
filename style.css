@@ -1,0 +1,33 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --primary-color: #FB6714; 
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 360px;
+    
+    border: 1px rgb(0, 0, 0) solid;
+}
+
+.background-paw{
+    background-image: url(./assets/paw.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer{
+    background-color: var(--primary-color);
+    
+}
