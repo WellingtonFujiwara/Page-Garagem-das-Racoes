@@ -25,9 +25,15 @@ body{
     border: 1px rgb(0, 0, 0) solid;
 }
 
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 nav{
     display: flex;
-    justify-content: space-between;
+    gap: 50px;
 
     margin: 14px;
 }
@@ -52,7 +58,7 @@ nav{
     background-repeat: no-repeat;
     background-position: center;
 
-    padding: 25px;
+    padding: 25px; 
 }
 
 .background-paw>h1{
@@ -83,6 +89,36 @@ nav{
 
 .background-paw>button>img{
     width: 30px;
+}
+
+.dog-cat-image{
+    width: 305px;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 20px;
+}
+
+main>h2{
+    font-size: 3rem;
+    font-weight: 100;
+    color: var(--primary-color);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+main>p{
+    font-size: 1.5rem;
+}
+
+main>img{
+    width: 295px;
+    margin-top: 20px;
 }
 
 footer{
