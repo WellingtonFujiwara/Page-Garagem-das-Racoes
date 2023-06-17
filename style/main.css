@@ -1,0 +1,24 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 20px;
+}
+
+main>h2{
+    font-size: 3rem;
+    font-weight: 100;
+    color: var(--primary-color);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+main>p{
+    font-size: 1.5rem;
+}
+
+main>img{
+    width: 295px;
+    margin-top: 20px;
+}

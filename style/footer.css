@@ -1,0 +1,25 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 30px;
+    background-color: var(--primary-color);
+}
+
+footer>img{
+    width: 250px;
+}
+
+footer>p{
+    color: white;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.footer-contact{
+    list-style: none;
+
+    display: flex;
+    gap: 70px;
+}
