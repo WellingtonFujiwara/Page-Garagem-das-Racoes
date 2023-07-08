@@ -4,9 +4,9 @@ header{
     align-items: center;
 }
 
-nav{
+.container-logo-menu-button{
     display: flex;
-    gap: 50px;
+    gap: 30px;
 
     margin: 14px;
 }
@@ -15,23 +15,42 @@ nav{
     width: 210px;
 }
 
-.sidebar{
+.menu-button{
     color: gray;
     border: none;
     padding: 10px;
 }
 
+.menu{
+    display: none;
+}
+
+.menu-active{
+    z-index: 99;
+}
+
+.container-background-paw-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    width: 100%;
+}
+
 .background-paw{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
 
-    background-image: url(./assets/paw.png);
-    background-size: 340px;
+    background-image: url(../assets/paw.png);
+    background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
 
     padding: 25px; 
+    width: 340px;
 }
 
 .background-paw>h1{
@@ -49,20 +68,46 @@ nav{
     align-items: center;
 
     text-decoration: none;
-    margin: auto;
+    padding: 20px;
+    
     width: 280px;
     height: 50px;
     border: none;
     border-radius: 100px;
     background-color: #1751E5;
     color: white;
-    font-size: 2.2rem;
+    font-size: 22px;
 }
 
-.background-paw>.contact>img{
+.contact>img{
     width: 30px;
 }
 
 .dog-cat-image{
-    width: 305px;
+    width: 290px;
+}
+
+@media (min-width: 640px) {
+    .container-logo-menu-button .logo{
+        width: 400px;
+    }
+
+    .container-logo-menu-button .menu-button{
+        display: none;
+    }
+
+    .container-background-paw-img{
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1080px) {
+    .background-paw{
+        width: 600px;
+        height: 600px;
+    }
+
+    .dog-cat-image{
+        width: 450px;
+    }
 }
