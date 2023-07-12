@@ -6,9 +6,12 @@ header{
 
 .container-logo-menu-button{
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 
-    margin: 14px;
+    width: 90%;
+    margin-top: 25px;
 }
 
 .logo{
@@ -29,16 +32,16 @@ header{
     z-index: 99;
 }
 
-.container-background-paw-img{
+.container-header-description{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content:space-around;
+
     width: 100%;
 }
 
-.background-paw{
+.header-description{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,15 +52,15 @@ header{
     background-repeat: no-repeat;
     background-position: center;
 
-    padding: 25px; 
     width: 340px;
+    padding: 30px; 
 }
 
-.background-paw>h1{
+.header-description>h1{
     font-size: 4rem;
 }
 
-.background-paw>p{
+.header-description>p{
     font-size: 1.5rem;
     color: #605F5F;
 }
@@ -84,30 +87,58 @@ header{
 }
 
 .dog-cat-image{
-    width: 290px;
+    width: 90%;
 }
 
 @media (min-width: 640px) {
+    .container-logo-menu-button{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; 
+    }
+
     .container-logo-menu-button .logo{
-        width: 400px;
+        width: 300px;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+        width: 100%;
+    }
+
+    .menu button {
+        font-weight: 700;
+        color: var(--primary-color);
+        border: none;
+        background-color: white;
     }
 
     .container-logo-menu-button .menu-button{
         display: none;
     }
 
-    .container-background-paw-img{
+    .container-header-description{
         flex-direction: row;
+    }
+
+    .dog-cat-image{
+        width: 35%;
     }
 }
 
 @media (min-width: 1080px) {
-    .background-paw{
-        width: 600px;
-        height: 600px;
+    .container-logo-menu-button{
+        flex-direction: row;
     }
 
-    .dog-cat-image{
-        width: 450px;
+    .menu{
+        justify-content: flex-end;
+    }
+
+    .header-description{
+        width: 600px;
+        height: 600px;
     }
 }
