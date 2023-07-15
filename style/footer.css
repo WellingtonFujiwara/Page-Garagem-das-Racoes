@@ -9,10 +9,6 @@ footer{
     background-color: rgb(128, 116, 95);
 }
 
-footer>img{
-    width: 250px;
-}
-
 footer>article>p{
     color: white;
     font-size: 1rem;
