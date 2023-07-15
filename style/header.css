@@ -38,7 +38,7 @@ header{
     align-items: center;
     justify-content:space-around;
 
-    width: 100%;
+    width: 90%;
 }
 
 .header-description{
@@ -52,7 +52,7 @@ header{
     background-repeat: no-repeat;
     background-position: center;
 
-    width: 340px;
+    width: 370px;
     padding: 30px; 
 }
 
@@ -87,7 +87,7 @@ header{
 }
 
 .dog-cat-image{
-    width: 90%;
+    width: 100%;
 }
 
 @media (min-width: 640px) {
