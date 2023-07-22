@@ -6,6 +6,7 @@ header{
 
 .container-logo-menu-button{
     display: flex;
+    /* flex-direction: column; */
     justify-content: space-between;
     align-items: center;
     gap: 10px;
@@ -19,6 +20,7 @@ header{
 }
 
 .menu-button{
+    /* display: none; */
     color: gray;
     border: none;
     padding: 10px;
@@ -26,10 +28,17 @@ header{
 
 .menu{
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 70px;
+    width: 100%;
 }
 
-.menu-active{
-    z-index: 99;
+.menu>a{
+    font-weight: 700;
+    color: var(--primary-color);
+    border: none;
+    background-color: white;
 }
 
 .container-header-description{
@@ -103,16 +112,7 @@ header{
 
     .menu{
         display: flex;
-        justify-content: center;
-        gap: 70px;
-        width: 100%;
-    }
-
-    .menu button {
-        font-weight: 700;
-        color: var(--primary-color);
-        border: none;
-        background-color: white;
+        flex-direction: row;
     }
 
     .container-logo-menu-button .menu-button{

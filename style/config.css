@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
 :root{
@@ -11,6 +13,7 @@
 
 html{
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -21,7 +24,7 @@ html{
 
 @media (min-width: 1080px) {
     html{
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 

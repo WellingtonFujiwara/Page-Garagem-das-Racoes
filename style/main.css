@@ -2,10 +2,12 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-color: rgb(250, 247, 235);
 }
 
 main>h2{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 100;
     color: var(--primary-color);
     margin-top: 20px;
@@ -14,10 +16,11 @@ main>h2{
 
 main>figure{
     display: flex;
+    gap: 30px;
     flex-wrap: wrap;
     justify-content: space-around;
 
-    width: 100%;
+    margin-bottom: 100px;
 }
 
 main>figure>img{
@@ -28,8 +31,8 @@ main>figure>img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+    justify-content: space-evenly;
+    gap: 50px;
 
     width: 90%;
     margin: 50px 0;
@@ -41,14 +44,16 @@ main>figure>img{
    gap: 10px;
 }
 
-.quem-somos h2{
-    font-size: 3rem;
+.quem-somos>h2{
+    font-size: 2rem;
     font-weight: 100;
     color: var(--primary-color);
 }
 
-.quem-somos p{
+.quem-somos>p{
+    color: rgb(45, 45, 45);
     font-size: 1.5rem;
+    font-weight: 100;
 }
 
 .pets{
