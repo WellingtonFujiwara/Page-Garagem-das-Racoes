@@ -6,7 +6,6 @@ header{
 
 .container-logo-menu-button{
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
     align-items: center;
     gap: 10px;
@@ -20,7 +19,6 @@ header{
 }
 
 .menu-button{
-    /* display: none; */
     color: gray;
     border: none;
     padding: 10px;
