@@ -18,25 +18,63 @@ header{
     width: 210px;
 }
 
-.menu-button{
+/* .menu-button{
     color: gray;
     border: none;
     padding: 10px;
-}
+} */
 
 .menu{
-    display: none;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    border-radius: 0 0 20px 20px;
+    background-color: #605F5F;
+    text-align: center;
+    /* display: none; */
     flex-direction: column;
-    justify-content: center;
-    gap: 70px;
+    /* justify-content: center; */
+    gap: 0px;
     width: 100%;
+    transition: 0.3s;
+}
+
+.menu.active{
+    left: 0;
 }
 
 .menu>a{
     font-weight: 700;
     color: var(--primary-color);
     border: none;
-    background-color: white;
+    /* margin: 16px 0; */
+}
+
+.box-bar{
+    display: block;
+    cursor: pointer;
+}
+
+.box-bar.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.box-bar.active .bar:nth-child(1){
+    transform: translate(8px) rotate(45deg);
+}
+
+.box-bar.active .bar:nth-child(3){
+    transform: translate(-8px) rotate(-45deg);
+} 
+
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
 }
 
 .container-header-description{
@@ -104,18 +142,37 @@ header{
         gap: 30px; 
     }
 
-    .container-logo-menu-button .logo{
+    .logo{
         width: 300px;
     }
 
     .menu{
+        left: 0;
+        top: 0;
+        border-radius: 0;
+        background-color: white;
+        /* text-align: center; */
+        position: relative;
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        gap: 70px;
+        /* width: 100%; */
     }
 
-    .container-logo-menu-button .menu-button{
+    /* .menu>a{
+        font-weight: 700;
+        color: var(--primary-color);
+        border: none;
+    } */
+
+    .box-bar{
         display: none;
     }
+
+    /* .container-logo-menu-button .menu-button{
+        display: none;
+    } */
 
     .container-header-description{
         flex-direction: row;
