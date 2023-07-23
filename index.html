@@ -13,14 +13,15 @@
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/animation.css">
 
     <script src="./script/script.js" defer></script>
 
     <title>Garagem das Rações</title>
 </head>
 <body>
-
-    <section class="container">
+    
+    <section class="container fadeIn">
         <header>
             <nav id="home" class="container-logo-menu-button">
                 <img class="logo" src="./assets/logo.png" alt="logo">
@@ -28,19 +29,23 @@
                 <button class="menu-button">Menu</button>
 
                 <div class="menu">
-                    <a href="#home">
+                    <a class="scale" href="#home">
+                        <i class="ph-fill ph-paw-print"></i>
                         Home
                     </a>
     
-                    <a href="#services">
+                    <a class="scale" href="#services">
+                        <i class="ph-fill ph-paw-print"></i>
                         Serviços
                     </a>
     
-                    <a href="#about-us">
+                    <a class="scale" href="#about-us">
+                        <i class="ph-fill ph-paw-print"></i>
                         Quem somos
                     </a>
     
-                    <a href="#contact">
+                    <a class="scale" href="#contact">
+                        <i class="ph-fill ph-paw-print"></i>
                         Contato
                     </a>
                 </div>
@@ -53,7 +58,7 @@
                     <p>Nossas instalações oferecem cuidados profissionais em um ambiente limpo, seguro e caseiro para o seu animal de estimação.</p>
     
                     <a href="https://wa.me//5517997734703" 
-                    class="contact" target="_blank">
+                    class="contact scale" target="_blank">
     
                         <img src="./assets/whatsapp.png" alt="whatsapp">
                         Entre em contato
@@ -71,13 +76,13 @@
             <h2 id="services">Serviços</h2>
 
             <figure>
-                <img src="./assets/pet grooming.png" alt="banho e tosa">
+                <img class="wobble" src="./assets/pet grooming.png" alt="banho e tosa">
 
-                <img src="./assets/food.png" alt="rações e petiscos">
+                <img class="wobble" src="./assets/food.png" alt="rações e petiscos">
 
-                <img src="./assets/accessories.png" alt="acessórios">
+                <img class="wobble" src="./assets/accessories.png" alt="acessórios">
 
-                <img src="./assets/toys.png" alt="brinquedos">
+                <img class="wobble" src="./assets/toys.png" alt="brinquedos">
             </figure>
 
             <div class="container-quem-somos">
@@ -96,19 +101,19 @@
         <footer>
             <div>
                 <ul class="footer-contact" id="contact">
-                    <li>
+                    <li class="scale">
                         <a href="https://wa.me//5517997734703" target="_blank">
                             <img class="social-icon" src="./assets/whatsapp.png" alt="whatsapp">
                         </a>
                     </li>
     
-                    <li>
+                    <li class="scale">
                         <a href="https://www.instagram.com/garagemdasracoes_/" target="_blank">
                             <img class="social-icon" src="./assets/instagram.png" alt="instagram">
                         </a>
                     </li>
     
-                    <li>
+                    <li class="scale">
                         <a href="https://www.facebook.com/profile.php?id=100077535874557" target="_blank">
                             <img class="social-icon" src="./assets/facebook.png" alt="facebook">
                         </a>
