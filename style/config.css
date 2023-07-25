@@ -14,17 +14,29 @@
 html{
     font-size: 10px;
     scroll-behavior: smooth;
+    scroll-padding: 150px;
 }
 
 .container{
+    padding: 66px 0;
     display: flex;
     flex-direction: column;
     gap: 80px;
 }
 
+@media (min-width: 640px) {
+    .container{
+        padding: 132px 0; 
+    }
+}
+
 @media (min-width: 1080px) {
     html{
         font-size: 12px;
+    }
+
+    .container{
+        padding: 66px 0; 
     }
 }
 
